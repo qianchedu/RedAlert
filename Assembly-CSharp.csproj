@@ -61,6 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DesignPatterns\D001State\T001State.cs" />
+    <Compile Include="Assets\Script\ArchievementSystem\ArchievementSystem.cs" />
+    <Compile Include="Assets\Script\BaseClass\IBaseUI.cs" />
+    <Compile Include="Assets\Script\BaseClass\IGameSystem.cs" />
+    <Compile Include="Assets\Script\CampSystem\CampSystem.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\CharacterSystem.cs" />
+    <Compile Include="Assets\Script\EnergySystem\EnergySystem.cs" />
+    <Compile Include="Assets\Script\GameEventSystem\GameEventSystem.cs" />
     <Compile Include="Assets\Script\GameFacade.cs" />
     <Compile Include="Assets\Script\GameLoop.cs" />
     <Compile Include="Assets\Script\SceneState\BattleState.cs" />
@@ -68,6 +75,12 @@
     <Compile Include="Assets\Script\SceneState\MainMenuState.cs" />
     <Compile Include="Assets\Script\SceneState\SceneStateController.cs" />
     <Compile Include="Assets\Script\SceneState\StartState.cs" />
+    <Compile Include="Assets\Script\StageSystem\StageSystem.cs" />
+    <Compile Include="Assets\Script\UISystem\CampInfoUI.cs" />
+    <Compile Include="Assets\Script\UISystem\GamePauseUI.cs" />
+    <Compile Include="Assets\Script\UISystem\GameStateInfoUI.cs" />
+    <Compile Include="Assets\Script\UISystem\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\UISystem\SoldierInfoUI.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/WorkSpace/Unity/Day0815/RedAlert/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
