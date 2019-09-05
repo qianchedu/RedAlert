@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\DesignPatterns\D001State\T001State.cs" />
     <Compile Include="Assets\DesignPatterns\D006Bridge\T006Bridge.cs" />
+    <Compile Include="Assets\DesignPatterns\D007Strategy\T007Strategy.cs" />
     <Compile Include="Assets\Script\ArchievementSystem\ArchievementSystem.cs" />
     <Compile Include="Assets\Script\BaseClass\IBaseUI.cs" />
     <Compile Include="Assets\Script\BaseClass\IGameSystem.cs" />
@@ -69,6 +70,9 @@
     <Compile Include="Assets\Script\CharacterSystem\Attr\EnemyAttr.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Attr\ICharacterAttr.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Attr\SoldierAttr.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\AttrStrategy\EnemyAttrStrategy.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\AttrStrategy\IAttrStrategy.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\AttrStrategy\SoldierAttrStrategy.cs" />
     <Compile Include="Assets\Script\CharacterSystem\CharacterSystem.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Enemy\EnemyElf.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Enemy\EnemyOgre.cs" />

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DesignPatterns/D006Bridge/T006Bridge.unity
+- path: Assets/DesignPatterns/D007Strategy/T007Strategy.unity
   isLoaded: 1
   isActive: 1

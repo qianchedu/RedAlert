@@ -27,10 +27,13 @@ namespace Red
         protected float mMoveSpeed;
 
         protected int mCurrentHP;
-
-
-
-
         protected string mIconSprite;
+
+        protected int mLv;              //等级
+        protected float mCritRate;      //暴击率
+
+        //增加的最大血量 抵御防御值，暴击增加的伤害
+        protected IAttrStrategy mStrategy;
+
     }
 }
