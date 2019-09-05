@@ -19,14 +19,50 @@ namespace Red
 {
 	public class WeaponGun : IWeapon
     {
-        /// <summary>
-        /// 攻击命令
-        /// </summary>
-        /// <param name="targetPosition">攻击目标</param>
-        public override void Fire(Vector3 targetPosition)
+        ///// <summary>
+        ///// 攻击命令
+        ///// </summary>
+        ///// <param name="targetPosition">攻击目标</param>
+        //public override void Fire(Vector3 targetPosition)
+        //{
+        //    Debug.Log("显示特效");
+        //    Debug.Log("播放声音");
+
+        //    //显示枪口特效
+        //    mPariticle.Stop();          //将特效停止
+        //    mPariticle.Play();          //播放特效
+        //    mLight.enabled = true;      //灯光设置开启
+
+        //    //显示子弹的轨迹
+        //    mLine.enabled = true;       //轨迹
+        //    mLine.startWidth = 0.05f;   //
+        //    mLine.endWidth = 0.05f;
+        //    mLine.SetPosition(0, mGameObject.transform.position);
+        //    mLine.SetPosition(1, targetPosition);
+
+        //    //播放声音
+        //    string clipName = "GunShot";
+        //    AudioClip clip = null;
+        //    mAudio.clip = clip;
+        //    mAudio.Play();
+
+
+        //}
+
+
+        protected override void PlayBulletEffect(Vector3 targetPosition)
         {
-            Debug.Log("显示特效");
-            Debug.Log("播放声音");
+            DoPlayBulletEffect(0.05f, targetPosition);
+        }
+
+        protected override void PlaySound()
+        {
+            DoPlaySound("GunShot");
+        }
+
+        protected override void SetEffectDisplayTime()
+        {
+            mEffectDisplayTime = 0.2f;
         }
     }
 }

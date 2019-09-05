@@ -63,6 +63,7 @@
     <Compile Include="Assets\DesignPatterns\D001State\T001State.cs" />
     <Compile Include="Assets\DesignPatterns\D006Bridge\T006Bridge.cs" />
     <Compile Include="Assets\DesignPatterns\D007Strategy\T007Strategy.cs" />
+    <Compile Include="Assets\DesignPatterns\D008TempleMethod\T008TempleMethod.cs" />
     <Compile Include="Assets\Script\ArchievementSystem\ArchievementSystem.cs" />
     <Compile Include="Assets\Script\BaseClass\IBaseUI.cs" />
     <Compile Include="Assets\Script\BaseClass\IGameSystem.cs" />

@@ -19,14 +19,19 @@ namespace Red
 {
 	public class WeaponRifle : IWeapon
     {
-        /// <summary>
-        /// 攻击命令
-        /// </summary>
-        /// <param name="targetPosition">攻击目标</param>
-        public override void Fire(Vector3 targetPosition)
+        protected override void PlayBulletEffect(Vector3 targetPosition)
         {
-            Debug.Log("显示特效");
-            Debug.Log("播放声音");
+            DoPlayBulletEffect(0.03f, targetPosition);
+        }
+
+        protected override void PlaySound()
+        {
+            DoPlaySound("RifleShot");
+        }
+
+        protected override void SetEffectDisplayTime()
+        {
+            mEffectDisplayTime = 0.3f;
         }
     }
 }

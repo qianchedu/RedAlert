@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DesignPatterns/D007Strategy/T007Strategy.unity
+- path: Assets/DesignPatterns/D008TempleMethod/T008TempleMethod.unity
   isLoaded: 1
   isActive: 1
