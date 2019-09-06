@@ -40,4 +40,15 @@
 
 例如：请客：1）点单	2）吃东西 	3）买单
 这三个步骤就可以做成一个模板方法模式
+
+
+
+
+09)状态模式之抽象状态接口(有限状态机模式FSMSystem)
+	就是角色的状态发生了变化了，就可以使用状态模式
+
+//修改模板
+E:\software\UnityHub\Unity\Editor\Data\Resources\ScriptTemplates
+
+
 	

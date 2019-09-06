@@ -1,0 +1,34 @@
+/***********************************************
+    *ProjectsName:          #PROJECTSNAME#
+    *Copyright(C) 2017 by   #COMPANY#  
+    *All rights reserved. 
+    *FileName:              #SCRIPTFULLNAME# 
+    *Author:                #AUTHOR# 
+    *Version:               #VERSION# 
+    *UnityVersion:          #UNITYVERSION# 
+    *Date:                  #DATE# 
+    *Description:           #DESCRIPTION#
+    *History:               #HISTORY#
+/***********************************************/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace #WORKNAMESPACE#
+{
+	public class #SCRIPTNAME# : MonoBehaviour
+	{
+		// Start is called before the first frame update
+		void Start()
+		{
+			#NOTRIM#
+		}
+
+		// Update is called once per frame
+		void Update()
+		{
+			#NOTRIM#
+		}
+	}
+}
