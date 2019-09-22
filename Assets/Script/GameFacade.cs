@@ -51,15 +51,24 @@ namespace Red
 
 
         private ArchievementSystem mArchievementSystem;
-        private CampSystem mCampSystem;
-        private CharacterSystem mCharacterSystem;
-        private EnergySystem mEnergySystem;
-        private GameEventSystem mGameEventSystem;
-        private StageSystem mStateSystem;
 
+        //兵营系统
+        private CampSystem mCampSystem;
+        //角色系统
+        private CharacterSystem mCharacterSystem;
+        //能量系统
+        private EnergySystem mEnergySystem;
+        //角色事件系统
+        private GameEventSystem mGameEventSystem;
+        //关卡系统
+        private StageSystem mStateSystem;
+        //兵营信息UI
         private CampInfoUI mCampInfoUI;
+        //游戏暂停UI
         private GamePauseUI mGamePauseUI;
+        //游戏状态UI
         private GameStateInfoUI mGameStateInfoUI;
+        //战士信息UI
         private SoldierInfoUI mSoldierInfoUI;
 
 

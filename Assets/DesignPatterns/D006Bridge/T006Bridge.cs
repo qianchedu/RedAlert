@@ -35,7 +35,7 @@ namespace Demo
             //WeaponRifle rifle = new WeaponRifle();
             //character.rifle = rifle;
             character.weapon = new WeaponGun();
-            character.Attack(Vector3.zero);
+          //  character.Attack(Vector3.zero);
 
 
 		}

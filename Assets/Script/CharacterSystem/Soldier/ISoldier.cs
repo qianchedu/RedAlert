@@ -19,6 +19,45 @@ namespace Red
 {
 	public class ISoldier : ICharacter
 	{
-		
+        /// <summary>
+        /// 战士的有限状态机模式
+        /// </summary>
+        protected SoldierFSMSystem mFSMSystem;
+
+
+        public ISoldier():base()
+        {
+            MakeFSM();
+        }
+
+
+        public void UpdateFSMAI(List<ICharacter> targets)
+        {
+            mFSMSystem.currentState.Reason(targets);
+            mFSMSystem.currentState.Act(targets);
+        }
+
+        private void MakeFSM()
+        {
+            mFSMSystem = new SoldierFSMSystem();
+
+            //参数1:角色的有限状态机
+            //参数2:控制的对象(为当前角色的对象)
+            SoldierIdleState idleState = new SoldierIdleState(mFSMSystem,this);
+            idleState.AddTransition(SoldierTransition.SeeEnemy, SoldierStateID.Chase);
+
+            SoldierChaseState chaseState = new SoldierChaseState(mFSMSystem, this);
+            chaseState.AddTransition(SoldierTransition.NoEnemy, SoldierStateID.Idle);
+            chaseState.AddTransition(SoldierTransition.CanAttack, SoldierStateID.Attack);
+
+
+            SoldierAttackState attackState = new SoldierAttackState(mFSMSystem, this);
+            attackState.AddTransition(SoldierTransition.NoEnemy, SoldierStateID.Idle);
+            attackState.AddTransition(SoldierTransition.SeeEnemy, SoldierStateID.Chase);
+
+            mFSMSystem.AddState(idleState,chaseState,attackState);
+           
+
+        }
 	}
 }

@@ -47,6 +47,14 @@ namespace Red
 
         protected SoldierStateID mStateID;
 
+        protected ICharacter mCharacter;
+        protected SoldierFSMSystem mFSM;
+
+        public ISoldierState(SoldierFSMSystem fsm,ICharacter character)
+        {
+            mFSM = fsm;
+            mCharacter = character;
+        }
 
         public SoldierStateID stateID
         {
@@ -128,12 +136,12 @@ namespace Red
         /// <summary>
         /// 判断在当前状态下是否需要转换到其他状态的
         /// </summary>
-        public abstract void Reason();
+        public abstract void Reason(List<ICharacter> targets);
 
         /// <summary>
         /// 在当前状态下的游戏逻辑--这个状态想要做的一些事情
         /// </summary>
-        public abstract void Act();
+        public abstract void Act(List<ICharacter> targets);
 
 
 	}

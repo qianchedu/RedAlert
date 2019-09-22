@@ -32,6 +32,13 @@ namespace Red
 
         protected float mEffectDisplayTime = 0;                 //特效显示的时间
 
+        public float atkRange
+        {
+            get
+            {
+                return mAtkRange;
+            }
+        }
 
         /// <summary>
         /// 每帧更新

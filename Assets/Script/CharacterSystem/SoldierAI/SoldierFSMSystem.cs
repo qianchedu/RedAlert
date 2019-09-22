@@ -32,6 +32,15 @@ namespace Red
 
         public ISoldierState currentState { get { return mCurrentState; } }
 
+
+        public void AddState(params ISoldierState[] states)
+        {
+            foreach (ISoldierState item in states)
+            {
+                AddState(item);
+            }
+        }
+
         /// <summary>
         /// 添加状态
         /// </summary>
