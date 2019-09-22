@@ -19,6 +19,31 @@ namespace Red
 {
 	public class IEnemy : ICharacter
 	{
-		
+        protected EnemyFSMSystem mFSMSystem;
+
+        public IEnemy()
+        {
+            MakeFSM();
+        }
+
+        public void UpdateFSMAI(List<ICharacter> targets)
+        {
+            mFSMSystem.currentState.Reason(targets);
+            mFSMSystem.currentState.Act(targets);
+        }
+
+        private void MakeFSM()
+        {
+            mFSMSystem = new EnemyFSMSystem();
+
+            EnemyChaseState chaseState = new EnemyChaseState(mFSMSystem, this);
+            chaseState.AddTrainsition(EnemyTransition.CanAttack, EnemyStateID.Attack);
+
+            EnemyAttackState attackState = new EnemyAttackState(mFSMSystem, this);
+            attackState.AddTrainsition(EnemyTransition.LostSoldier, EnemyStateID.Chase);
+
+            mFSMSystem.AddState(chaseState, attackState);
+        }
 	}
+
 }

@@ -131,5 +131,12 @@ namespace Red
             mGameStateInfoUI.Release();
             mSoldierInfoUI.Release();
         }
+
+
+
+        public Vector3 GetEnemyTargetPosition()
+        {
+            return Vector3.zero;
+        }
 	}
 }

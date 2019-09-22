@@ -79,6 +79,10 @@
     <Compile Include="Assets\Script\CharacterSystem\Enemy\EnemyOgre.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Enemy\EnemyTroll.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Enemy\IEnemy.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\EnemyAI\EnemyAttackState.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\EnemyAI\EnemyChaseState.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\EnemyAI\EnemyFSMSystem.cs" />
+    <Compile Include="Assets\Script\CharacterSystem\EnemyAI\IEnemyState.cs" />
     <Compile Include="Assets\Script\CharacterSystem\ICharacter.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Soldier\ISoldier.cs" />
     <Compile Include="Assets\Script\CharacterSystem\Soldier\SoldierCaptain.cs" />
